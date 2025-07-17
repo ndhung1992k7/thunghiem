@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>ThanhDieu Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/star/style.css">
+</head>
+<body>
+
+<div class="horizontal-container" id="hContainer">
+  <!-- Trang bên trái (Hiệu ứng 1 + Bio 1) -->
+  <div class="vertical-wrapper" id="vLeft">
+    <!-- Hiệu ứng 1 -->
+    <div class="section effect1">
+      <img src="assets/star/avatar.jpg" class="avatar">
+      <div class="name">ThanhDieu</div>
+      <div class="quote" id="quote1">"Câu nói hay đầu tiên..."</div>
+      <div class="arrow">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <!-- Bio 1 -->
+    <div class="section bio1">
+      <div class="home-header" onclick="goToEffectFromBio(1)">ThanhDieu Home</div>
+      <iframe src="bio/bio1.html"></iframe>
+    </div>
+  </div>
+
+  <!-- Trang bên phải (Hiệu ứng 2 + Bio 2) -->
+  <div class="vertical-wrapper" id="vRight">
+    <!-- Hiệu ứng 2 -->
+    <div class="section effect2">
+      <img src="assets/star/avatar.jpg" class="avatar">
+      <div class="name">ThanhDieu</div>
+      <div class="quote" id="quote2">"Câu nói hay thứ hai..."</div>
+      <div class="arrow">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <!-- Bio 2 -->
+    <div class="section bio2">
+      <div class="home-header" onclick="goToEffectFromBio(2)">ThanhDieu Home</div>
+      <iframe src="bio/bio2.html"></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="assets/star/script.js"></script>
+</body>
+</html>
