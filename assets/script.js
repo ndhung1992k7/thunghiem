@@ -1,3 +1,3 @@
 setTimeout(function () {
-  window.location.href = "assets/star/cuon.html";
+  window.location.href = "assets/cuon.html";
 }, 3000);
