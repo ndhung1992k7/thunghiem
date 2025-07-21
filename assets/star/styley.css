@@ -37,15 +37,39 @@ html, body {
   position: relative;
 }
 
+/* Hiệu ứng 1 */
 .effect1 {
-  background: url('https://i.imgur.com/U8iOeX4.jpg') center center/cover no-repeat;
-  color: white;
+  background-image: url("assets/images/bg-effect1-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
 }
 
+/* Hiệu ứng 2 */
 .effect2 {
-  background: url('https://i.imgur.com/kqE3vR3.jpg') center center/cover no-repeat;
-  color: white;
+  background-image: url("assets/images/bg-effect2-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
 }
+
+/* Điện thoại (màn hình dưới 768px) */
+@media screen and (max-width: 768px) {
+  .effect1 {
+    background-image: url("assets/images/bg-effect1-mobile.jpg");
+  }
+
+  .effect2 {
+    background-image: url("assets/images/bg-effect2-mobile.jpg");
+  }
+}
+
 
 
 .arrow {
@@ -121,4 +145,3 @@ iframe {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-/* CSS content truncated for brevity */
