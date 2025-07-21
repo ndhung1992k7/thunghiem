@@ -72,4 +72,19 @@ setInterval(() => {
   document.getElementById("quote1").innerText = quotes1[q1];
   document.getElementById("quote2").innerText = quotes2[q2];
 }, 5000);
-// JavaScript content truncated for brevity
+
+// ⬆️ Thêm chạm vào bất kỳ đâu trong hiệu ứng để tự động chuyển sang bio
+["click", "touchstart"].forEach(evt => {
+  document.querySelector(".effect1").addEventListener(evt, () => {
+    if (verticalPositions[0] === 0) {
+      verticalPositions[0] = 1;
+      updateTransforms();
+    }
+  });
+  document.querySelector(".effect2").addEventListener(evt, () => {
+    if (verticalPositions[1] === 0) {
+      verticalPositions[1] = 1;
+      updateTransforms();
+    }
+  });
+});
