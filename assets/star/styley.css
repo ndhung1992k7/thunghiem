@@ -39,7 +39,8 @@ html, body {
 
 /* Hiệu ứng 1 */
 .effect1 {
-  background-image: url("/thunghiem/assets/background gif/background1.gif");
+  background-image: url("/thunghiem/assets/background/pc1.mp4
+    ");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +51,7 @@ html, body {
 
 /* Hiệu ứng 2 */
 .effect2 {
-  background-image: url("/thunghiem/assets/background gif/background2.gif");
+  background-image: url("/thunghiem/assets/background/pc2.mp4");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,11 +63,11 @@ html, body {
 /* Điện thoại (màn hình dưới 768px) */
 @media screen and (max-width: 768px) {
   .effect1 {
-    background-image: url("assets/images/bg-effect1-mobile.jpg");
+    background-image: url("/thunghiem/assets/background/mobile1.mp4");
   }
 
   .effect2 {
-    background-image: url("assets/images/bg-effect2-mobile.jpg");
+    background-image: url("/thunghiem/assets/background/mobile2.mp4");
   }
 }
 
