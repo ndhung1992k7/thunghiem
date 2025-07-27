@@ -37,40 +37,22 @@ html, body {
   position: relative;
 }
 
-/* Hiệu ứng 1 */
-.effect1 {
-  background-image: url("/thunghiem/assets/background/pc1.mp4
-    ");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  flex-shrink: 0;
-}
-
-/* Hiệu ứng 2 */
 .effect2 {
-  background-image: url("/thunghiem/assets/background/pc2.mp4");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   flex-shrink: 0;
+  background-image: url("assets/images/desktop-bg.jpg"); /* ảnh cho máy tính */
 }
 
-/* Điện thoại (màn hình dưới 768px) */
+/* Nếu là điện thoại (màn hình nhỏ hơn 768px) */
 @media screen and (max-width: 768px) {
-  .effect1 {
-    background-image: url("/thunghiem/assets/background/mobile1.mp4");
-  }
-
   .effect2 {
-    background-image: url("/thunghiem/assets/background/mobile2.mp4");
+    background-image: url("assets/images/mobile-bg.jpg"); /* ảnh cho điện thoại */
   }
 }
-
 
 
 .arrow {
@@ -145,4 +127,13 @@ iframe {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
