@@ -52,7 +52,7 @@ function goToEffectFromBio(bioNum) {
 }
 
 const quotes1 = [
-  "Có người rủ anh đi ăn tối, nhưng anh từ chối vì thực đơn không có em.",
+  "Có người rủ anh đi ăn tối, nhưng anh từ chối vì thực đơn không có em .",
   "Thanh xuân như một tách trà, sống không cà khịa thì quá uổng phí.",
   "Em là mặt trời, vì em xuất hiện là anh thấy chói mắt.",
   "Anh thích em hơn tất cả các dòng code anh từng viết."
